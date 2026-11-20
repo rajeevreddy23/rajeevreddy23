@@ -1,0 +1,1 @@
+const t=document.querySelector('.nav-toggle'),n=document.querySelector('.site-nav');t?.addEventListener('click',()=>n?.classList.toggle('open'));const p=location.pathname;document.querySelectorAll('.site-nav a').forEach(a=>{if(a.getAttribute('href')===p||(p.includes('/projects')&&a.getAttribute('href').endsWith('/projects/')))a.classList.add('active')});
